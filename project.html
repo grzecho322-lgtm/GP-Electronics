@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt | GP Electronics</title>
+    <meta
+      id="project-meta-description"
+      name="description"
+      content="Podstrona projektu GP Electronics z pełnym opisem, materiałami i linkami."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="shell header-inner">
+          <a class="brand" href="./index.html#start" aria-label="GP Electronics - start">
+            <span class="brand-mark">GP</span>
+            <span class="brand-copy">
+              <strong>GP Electronics</strong>
+              <small>Podstrona projektu • Kod • Opis • Pliki</small>
+            </span>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Nawigacja projektu">
+            <a href="./index.html#projekty">Portfolio</a>
+            <a href="./index.html#github">GitHub</a>
+            <a href="./index.html#patronite">Patronite</a>
+            <a href="./index.html#kontakt">Kontakt</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-ghost desktop-only" href="./index.html#projekty">Powrót do projektów</a>
+            <a class="button button-primary" id="project-github-profile-link" href="#" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="sr-only">Otwórz menu</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+          <div class="shell mobile-nav-inner">
+            <a href="./index.html#projekty">Portfolio</a>
+            <a href="./index.html#github">GitHub</a>
+            <a href="./index.html#patronite">Patronite</a>
+            <a href="./index.html#kontakt">Kontakt</a>
+            <a class="button button-primary button-block" href="./index.html#projekty">Wróć do strony głównej</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="project-main">
+        <section class="section shell project-page-section">
+          <a class="breadcrumb-link" href="./index.html#projekty">Wróć do portfolio</a>
+          <div id="project-detail-root"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="shell footer-inner">
+          <div>
+            <strong>GP Electronics</strong>
+            <p>Podstrony projektów z opisem, kodem, plikami i materiałami dodatkowymi.</p>
+          </div>
+          <div class="footer-links">
+            <a href="./index.html#start">Start</a>
+            <a href="./index.html#projekty">Projekty</a>
+            <a href="./index.html#github">GitHub</a>
+            <a href="./index.html#patronite">Patronite</a>
+            <a href="./index.html#kontakt">Kontakt</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./projects-data.js"></script>
+    <script src="./projects-data-extra.js"></script>
+    <script src="./project.js"></script>
+  </body>
+</html>

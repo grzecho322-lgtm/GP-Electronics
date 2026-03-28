@@ -14,28 +14,33 @@ Docelowy adres po włączeniu GitHub Pages:
 
 - `index.html` - struktura strony
 - `styles.css` - styl i układ
-- `app.js` - konfiguracja linków, lista projektów i filtrowanie portfolio
+- `projects-data.js` - konfiguracja linków i pierwsza część listy projektów
+- `projects-data-extra.js` - druga część listy projektów, opisów i materiałów
+- `app.js` - logika strony głównej i filtrowanie portfolio
+- `project.html` - szablon podstrony projektu
+- `project.js` - logika renderowania pełnego opisu, kodu i plików
 
 ## Co podmienić najpierw
 
-W pliku `app.js` możesz dalej aktualizować obiekt `siteConfig`:
+W pliku `projects-data.js` możesz dalej aktualizować obiekt `siteConfig`:
 
 - `patroniteUrl`
 - `email`
 - `website`
 
-Tablica `defaultProjects` jest już wypełniona projektami z obecnego workspace, ale możesz ją dalej rozszerzać albo podmieniać linki do konkretnych repozytoriów.
+Tablica `projects` jest już podzielona między `projects-data.js` i `projects-data-extra.js`, ale możesz ją dalej rozszerzać albo podmieniać linki do konkretnych repozytoriów, kodu, APK, PDF i innych materiałów.
 
 ## Dodawanie projektów tylko przez właściciela
 
-Publiczny formularz został usunięty ze strony. Nowe projekty dodajesz wyłącznie przez edycję `app.js` w repo `grzecho322-lgtm/GP-Electronics`, więc tylko konto z prawem zapisu do repo może publikować nowe wpisy.
+Publiczny formularz został usunięty ze strony. Nowe projekty dodajesz wyłącznie przez edycję `projects-data.js` i `projects-data-extra.js` w repo `grzecho322-lgtm/GP-Electronics`, więc tylko konto z prawem zapisu do repo może publikować nowe wpisy.
 
 Najprostsza ścieżka:
 
-1. Otwórz `app.js` na GitHub.
-2. Dopisz nowy obiekt do tablicy `defaultProjects`.
-3. Zapisz commit.
-4. Poczekaj, aż GitHub Pages odświeży stronę.
+1. Otwórz `projects-data.js` albo `projects-data-extra.js` na GitHub.
+2. Dopisz nowy obiekt do tablicy `projects`.
+3. Uzupełnij `fullDescription`, `highlights` i `resources`.
+4. Jeśli chcesz pokazać kod Arduino albo APK, podstaw link do pliku w `resources`.
+5. Zapisz commit i poczekaj, aż GitHub Pages odświeży stronę.
 
 ## Lokalny podgląd
 

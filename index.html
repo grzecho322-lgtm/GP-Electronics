@@ -178,7 +178,7 @@
               <div class="github-steps">
                 <div>
                   <strong>1. Treść</strong>
-                  <span>Zmieniasz `app.js` i własne linki.</span>
+                  <span>Zmieniasz `projects-data.js`, `projects-data-extra.js`, opisy, linki i materiały.</span>
                 </div>
                 <div>
                   <strong>2. Repozytorium</strong>
@@ -229,7 +229,7 @@
               <div class="editor-hint">
                 <strong>Bezpieczny model właścicielski:</strong>
                 <p>
-                  Strona pozostaje statyczna i bez backendu, ale tylko Ty możesz dodawać projekty, bo publikacja odbywa się przez edycję pliku `app.js` w repozytorium, do którego masz uprawnienia zapisu.
+                  Strona pozostaje statyczna i bez backendu, ale tylko Ty możesz dodawać projekty, bo publikacja odbywa się przez edycję plików `projects-data.js` i `projects-data-extra.js` w repozytorium, do którego masz uprawnienia zapisu.
                 </p>
               </div>
             </article>
@@ -243,7 +243,7 @@
 
               <div class="owner-actions">
                 <a class="button button-secondary" id="github-edit-projects-link" href="#" target="_blank" rel="noreferrer">
-                  Edytuj `app.js` na GitHub
+                  Edytuj dane projektów na GitHub
                 </a>
                 <a class="button button-ghost" id="github-repository-link-owner" href="#" target="_blank" rel="noreferrer">
                   Otwórz repo
@@ -251,10 +251,10 @@
               </div>
 
               <ol class="owner-steps">
-                <li>Otwórz plik `app.js` w repozytorium.</li>
-                <li>Dopisz nowy obiekt do tablicy `defaultProjects`.</li>
-                <li>Zapisz commit na gałęzi `main` albo przez własny branch.</li>
-                <li>Po publikacji GitHub Pages nowy projekt pojawi się publicznie na stronie.</li>
+                <li>Otwórz plik `projects-data.js` albo `projects-data-extra.js` w repozytorium.</li>
+                <li>Dopisz nowy obiekt do tablicy `projects` albo uzupełnij istniejący o pełny opis i materiały.</li>
+                <li>Podstaw linki do kodu, APK, PDF, repo albo dokumentacji w sekcji `resources`.</li>
+                <li>Zapisz commit, a GitHub Pages opublikuje nową kartę i podstronę projektu.</li>
               </ol>
 
               <div class="code-note">
@@ -346,6 +346,8 @@
       </footer>
     </div>
 
+    <script src="./projects-data.js"></script>
+    <script src="./projects-data-extra.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

@@ -1,155 +1,6 @@
-const siteConfig = {
-  siteName: "GP Electronics",
-  githubUrl: "https://github.com/grzecho322-lgtm",
-  githubRepoUrl: "https://github.com/grzecho322-lgtm/GP-Electronics",
-  githubEditProjectsUrl: "https://github.com/grzecho322-lgtm/GP-Electronics/edit/main/app.js",
-  patroniteUrl: "#patronite",
-  email: "grzegorzpyda@yahoo.com",
-  website: "https://grzecho322-lgtm.github.io/GP-Electronics/",
-};
-
-const defaultProjects = [
-  {
-    id: "plc-mvp",
-    title: "PLC MVP",
-    category: "PLC / Firmware / IDE",
-    shortDescription:
-      "MVP własnego sterownika PLC z firmware, lekkim językiem ST-lite, runtime scan-cycle, Modbus oraz przeglądarkowym IDE do diagnostyki i testów.",
-    tags: ["Rust", "C", "Modbus", "ST-lite"],
-    status: "Aktywnie rozwijany",
-    featured: true,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#1d4ed8",
-    coverB: "#0f766e",
-  },
-  {
-    id: "truck-service-niezbednik",
-    title: "Truck Service Niezbędnik",
-    category: "Flutter / Serwis",
-    shortDescription:
-      "Monorepo Flutter dla serwisu ciężarówek z lokalną bazą, diagnostyką, podpowiedziami napraw, eksportem PDF, backupem i synchronizacją przez Supabase.",
-    tags: ["Flutter", "Drift", "Supabase", "PDF"],
-    status: "Rozwijany",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#9a3412",
-    coverB: "#d97706",
-  },
-  {
-    id: "moto-service-app",
-    title: "Moto Service App",
-    category: "Flutter / Moto Serwis",
-    shortDescription:
-      "Aplikacja Flutter do prowadzenia serwisu pojazdów z lokalną bazą Isar, planami zadań, historią wpisów, załącznikami, backupem, widgetami oraz powiadomieniami o terminach.",
-    tags: ["Flutter", "Isar", "PDF", "Notifications"],
-    status: "Rozwijany",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#9a3412",
-    coverB: "#0f766e",
-  },
-  {
-    id: "rgb-ble-controller-app",
-    title: "RGB BLE Controller App",
-    category: "Flutter / BLE",
-    shortDescription:
-      "Aplikacja Flutter na Androida do skanowania urządzeń BLE, łączenia z ESP32-C3 RGB i sterowania kolorem przez suwaki, presety oraz przyciski zasilania.",
-    tags: ["Flutter", "BLE", "Android", "ESP32-C3"],
-    status: "Działające MVP",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#1d4ed8",
-    coverB: "#0f766e",
-  },
-  {
-    id: "gp-electronics-ide",
-    title: "GP Electronics IDE",
-    category: "Flutter / Desktop IDE",
-    shortDescription:
-      "Desktopowe IDE w Flutterze dla workflow embedded z PlatformIO: tworzenie projektów z presetów płytek, edycja `src/main.cpp` oraz akcje build, upload i monitor na macOS, Windows i Linux.",
-    tags: ["Flutter", "PlatformIO", "Desktop", "Embedded"],
-    status: "Aktywnie rozwijany",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#0f766e",
-    coverB: "#1d4ed8",
-  },
-  {
-    id: "esp32-c3-rgb-ble-controller",
-    title: "ESP32-C3 RGB BLE Controller",
-    category: "ESP32 / BLE",
-    shortDescription:
-      "Firmware dla ESP32-C3 SuperMini sterujący diodą RGB przez PWM i BLE, z płynnymi przejściami kolorów oraz dodatkowymi komendami przez Serial Monitor.",
-    tags: ["ESP32-C3", "BLE", "PWM", "RGB"],
-    status: "Gotowy do testów",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#0f766e",
-    coverB: "#1d4ed8",
-  },
-  {
-    id: "ws2805-driver-esp32-supermini",
-    title: "WS2805 Driver for ESP32 Super Mini",
-    category: "ESP32 / LED",
-    shortDescription:
-      "Sterownik taśm i modułów WS2805 wykorzystujący RMT w ESP32 Super Mini, z obsługą 40 bitów na piksel i testami kanałów RGBWW.",
-    tags: ["WS2805", "RMT", "ESP32", "RGBWW"],
-    status: "Gotowy szkic",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#d97706",
-    coverB: "#0f766e",
-  },
-  {
-    id: "guitar-multieffect-daisy",
-    title: "Cyfrowy Multi-Effect Gitarowy",
-    category: "Audio DSP / Daisy",
-    shortDescription:
-      "Starter własnego multi-efektu gitarowego na Daisy Seed z torem gate, compressor, drive, modulation, delay i reverb oraz dokumentacją hardware.",
-    tags: ["Daisy Seed", "C++", "DSP", "Audio"],
-    status: "Starter projektu",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#1d4ed8",
-    coverB: "#9a3412",
-  },
-  {
-    id: "arduino-rgb-led-controller",
-    title: "Arduino RGB LED Controller",
-    category: "Arduino / LED",
-    shortDescription:
-      "Prosty sterownik RGB LED dla Arduino Uno i Nano z trybem demo, komendami przez Serial Monitor i obsługą common cathode oraz common anode.",
-    tags: ["Arduino", "PWM", "RGB", "Serial"],
-    status: "Gotowy szkic",
-    featured: false,
-    demoUrl: "",
-    repoUrl: "",
-    coverA: "#475569",
-    coverB: "#0f766e",
-  },
-  {
-    id: "gp-electronics-site",
-    title: "GP Electronics Site",
-    category: "Web / GitHub Pages",
-    shortDescription:
-      "Statyczna strona portfolio GP Electronics do publikacji projektów, filtrowania realizacji i kierowania odbiorców do GitHub oraz Patronite, hostowana na GitHub Pages.",
-    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-    status: "Opublikowany",
-    featured: false,
-    demoUrl: "https://grzecho322-lgtm.github.io/GP-Electronics/",
-    repoUrl: "https://github.com/grzecho322-lgtm/GP-Electronics",
-    coverA: "#1d4ed8",
-    coverB: "#9a3412",
-  },
-];
+const gpSiteData = window.GP_SITE_DATA || {};
+const siteConfig = gpSiteData.siteConfig || {};
+const defaultProjects = gpSiteData.projects || [];
 
 const state = {
   search: "",
@@ -198,6 +49,7 @@ function getFilteredProjects(projects) {
       project.category,
       project.status,
       ...(project.tags || []),
+      ...((project.highlights || []).slice(0, 3)),
     ]
       .join(" ")
       .toLowerCase();
@@ -223,6 +75,10 @@ function normalizeUrl(value) {
   return isSafeUrl(value) ? value : "#";
 }
 
+function projectPageUrl(project) {
+  return `./project.html?id=${encodeURIComponent(project.id)}`;
+}
+
 function paletteForCategory(category) {
   const palettes = {
     "ESP32 / Motocykl": ["#0f766e", "#1d4ed8"],
@@ -239,30 +95,35 @@ function projectCoverMarkup(project, kind = "card") {
   const topClass = kind === "featured" ? "cover-topline" : "cover-chip";
   const bottomClass = "cover-bottomline";
   const tagLine = (project.tags || []).slice(0, 3).join(" • ");
+  const pageUrl = projectPageUrl(project);
 
   return `
-    <div class="${kind === "featured" ? "featured-cover" : "project-cover"}" style="--cover-a:${escapeHtml(coverA)}; --cover-b:${escapeHtml(coverB)};">
+    <a class="${kind === "featured" ? "cover-link featured-cover" : "cover-link project-cover"}" href="${escapeHtml(pageUrl)}" style="--cover-a:${escapeHtml(coverA)}; --cover-b:${escapeHtml(coverB)};">
       <div class="cover-grid" aria-hidden="true"></div>
       <span class="${topClass}">${escapeHtml(project.category)}</span>
       <div class="${bottomClass}">${escapeHtml(tagLine || project.title)}</div>
-    </div>
+    </a>
   `;
 }
 
 function buildProjectLinks(project) {
   const links = [];
 
+  links.push(
+    `<a class="button button-secondary" href="${escapeHtml(projectPageUrl(project))}">Pełny opis projektu</a>`
+  );
+
   if (isSafeUrl(project.demoUrl)) {
     links.push(
-      `<a class="button button-secondary" href="${escapeHtml(normalizeUrl(project.demoUrl))}" target="_blank" rel="noreferrer">Zobacz projekt</a>`
+      `<a class="button button-ghost" href="${escapeHtml(normalizeUrl(project.demoUrl))}" target="_blank" rel="noreferrer">Demo / live</a>`
     );
   }
 
   if (isSafeUrl(project.repoUrl)) {
     links.push(
-      `<a class="button button-ghost" href="${escapeHtml(normalizeUrl(project.repoUrl))}" target="_blank" rel="noreferrer">Repo projectu</a>`
+      `<a class="button button-ghost" href="${escapeHtml(normalizeUrl(project.repoUrl))}" target="_blank" rel="noreferrer">Repo projektu</a>`
     );
-  } else if (isSafeUrl(siteConfig.githubUrl)) {
+  } else if (!isSafeUrl(project.demoUrl) && isSafeUrl(siteConfig.githubUrl)) {
     links.push(
       `<a class="button button-ghost" href="${escapeHtml(normalizeUrl(siteConfig.githubUrl))}" target="_blank" rel="noreferrer">Profil GitHub</a>`
     );
@@ -277,7 +138,7 @@ function renderFeaturedProject(project) {
     return;
   }
 
-  elements.featuredProject.innerHTMH = `
+  elements.featuredProject.innerHTML = `
     <article class="featured-project">
       ${projectCoverMarkup(project, "featured")}
       <div class="featured-content">
@@ -285,7 +146,7 @@ function renderFeaturedProject(project) {
           <span class="pill">${escapeHtml(project.category)}</span>
           <span class="pill status">${escapeHtml(project.status)}</span>
         </div>
-        <h3>${escapeHtml(project.title)}</h3>
+        <h3><a class="project-title-link" href="${escapeHtml(projectPageUrl(project))}">${escapeHtml(project.title)}</a></h3>
         <p>${escapeHtml(project.shortDescription)}</p>
         <div class="tags">
           ${(project.tags || [])
@@ -301,7 +162,8 @@ function renderFeaturedProject(project) {
 function renderFilters(categories) {
   elements.categoryFilters.innerHTML = categories
     .map((category) => {
-      const activeClass = state.category === category ? "filter-button is-active" : "filter-button";
+      const activeClass =
+        state.category === category ? "filter-button is-active" : "filter-button";
 
       return `<button type="button" class="${activeClass}" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`;
     })
@@ -336,7 +198,7 @@ function renderProjects(projects) {
               <span class="pill">${escapeHtml(project.category)}</span>
               <span class="pill status">${escapeHtml(project.status)}</span>
             </div>
-            <h3>${escapeHtml(project.title)}</h3>
+            <h3><a class="project-title-link" href="${escapeHtml(projectPageUrl(project))}">${escapeHtml(project.title)}</a></h3>
             <p>${escapeHtml(project.shortDescription)}</p>
             <div class="tags">
               ${(project.tags || [])
@@ -358,7 +220,7 @@ function renderMeta(allProjects, filteredProjects, categories) {
 }
 
 function renderContactData() {
-  const githubShort = siteConfig.githubUrl.replace(/^https?:\/\//i, "");
+  const githubShort = (siteConfig.githubUrl || "").replace(/^https?:\/\//i, "");
 
   applyLink(elements.githubProfileLink, siteConfig.githubUrl);
   applyLink(elements.githubRepositoryLink, siteConfig.githubRepoUrl);
@@ -367,13 +229,17 @@ function renderContactData() {
   applyLink(elements.patroniteLinkHeader, siteConfig.patroniteUrl);
   applyLink(elements.patroniteLinkMobile, siteConfig.patroniteUrl);
   applyLink(elements.patroniteLinkSection, siteConfig.patroniteUrl);
-  elements.contactEmail.textContent = siteConfig.email;
-  elements.contactWebsite.textContent = siteConfig.website;
+  elements.contactEmail.textContent = siteConfig.email || "";
+  elements.contactWebsite.textContent = siteConfig.website || "";
   elements.contactGithub.textContent = githubShort;
 }
 
 function applyLink(anchor, url) {
-  anchor.href = url;
+  if (!anchor) {
+    return;
+  }
+
+  anchor.href = url || "#";
 
   if (isSafeUrl(url)) {
     anchor.target = "_blank";
