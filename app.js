@@ -38,6 +38,20 @@ const defaultProjects = [
     coverB: "#d97706",
   },
   {
+    id: "moto-service-app",
+    title: "Moto Service App",
+    category: "Flutter / Moto Serwis",
+    shortDescription:
+      "Aplikacja Flutter do prowadzenia serwisu pojazdów z lokalną bazą Isar, planami zadań, historią wpisów, załącznikami, backupem, widgetami oraz powiadomieniami o terminach.",
+    tags: ["Flutter", "Isar", "PDF", "Notifications"],
+    status: "Rozwijany",
+    featured: false,
+    demoUrl: "",
+    repoUrl: "",
+    coverA: "#9a3412",
+    coverB: "#0f766e",
+  },
+  {
     id: "rgb-ble-controller-app",
     title: "RGB BLE Controller App",
     category: "Flutter / BLE",
@@ -50,6 +64,20 @@ const defaultProjects = [
     repoUrl: "",
     coverA: "#1d4ed8",
     coverB: "#0f766e",
+  },
+  {
+    id: "gp-electronics-ide",
+    title: "GP Electronics IDE",
+    category: "Flutter / Desktop IDE",
+    shortDescription:
+      "Desktopowe IDE w Flutterze dla workflow embedded z PlatformIO: tworzenie projektów z presetów płytek, edycja `src/main.cpp` oraz akcje build, upload i monitor na macOS, Windows i Linux.",
+    tags: ["Flutter", "PlatformIO", "Desktop", "Embedded"],
+    status: "Aktywnie rozwijany",
+    featured: false,
+    demoUrl: "",
+    repoUrl: "",
+    coverA: "#0f766e",
+    coverB: "#1d4ed8",
   },
   {
     id: "esp32-c3-rgb-ble-controller",
@@ -106,6 +134,20 @@ const defaultProjects = [
     repoUrl: "",
     coverA: "#475569",
     coverB: "#0f766e",
+  },
+  {
+    id: "gp-electronics-site",
+    title: "GP Electronics Site",
+    category: "Web / GitHub Pages",
+    shortDescription:
+      "Statyczna strona portfolio GP Electronics do publikacji projektów, filtrowania realizacji i kierowania odbiorców do GitHub oraz Patronite, hostowana na GitHub Pages.",
+    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    status: "Opublikowany",
+    featured: false,
+    demoUrl: "https://grzecho322-lgtm.github.io/GP-Electronics/",
+    repoUrl: "https://github.com/grzecho322-lgtm/GP-Electronics",
+    coverA: "#1d4ed8",
+    coverB: "#9a3412",
   },
 ];
 
@@ -218,7 +260,7 @@ function buildProjectLinks(project) {
 
   if (isSafeUrl(project.repoUrl)) {
     links.push(
-      `<a class="button button-ghost" href="${escapeHtml(normalizeUrl(project.repoUrl))}" target="_blank" rel="noreferrer">Repo projektu</a>`
+      `<a class="button button-ghost" href="${escapeHtml(normalizeUrl(project.repoUrl))}" target="_blank" rel="noreferrer">Repo projectu</a>`
     );
   } else if (isSafeUrl(siteConfig.githubUrl)) {
     links.push(
@@ -235,7 +277,7 @@ function renderFeaturedProject(project) {
     return;
   }
 
-  elements.featuredProject.innerHTML = `
+  elements.featuredProject.innerHTMH = `
     <article class="featured-project">
       ${projectCoverMarkup(project, "featured")}
       <div class="featured-content">
