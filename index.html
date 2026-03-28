@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GP Electronics | Projekty, embedded i Patronite</title>
+    <meta
+      name="description"
+      content="Strona GP Electronics do publikacji projektów embedded, elektroniki i aplikacji oraz kierowania odbiorców do GitHub i Patronite."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="shell header-inner">
+          <a class="brand" href="#start" aria-label="GP Electronics - start">
+            <span class="brand-mark">GP</span>
+            <span class="brand-copy">
+              <strong>GP Electronics</strong>
+              <small>Projekty • Elektronika • Embedded • GitHub</small>
+            </span>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Główna nawigacja">
+            <a href="#start">Start</a>
+            <a href="#projekty">Projekty</a>
+            <a href="#github">GitHub</a>
+            <a href="#dodaj">Dodaj projekt</a>
+            <a href="#patronite">Patronite</a>
+            <a href="#kontakt">Kontakt</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-ghost desktop-only" id="github-profile-link" href="#" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a class="button button-primary" id="patronite-link-header" href="#" target="_blank" rel="noreferrer">
+              Wspieraj na Patronite
+            </a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="sr-only">Otwórz menu</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+          <div class="shell mobile-nav-inner">
+            <a href="#start">Start</a>
+            <a href="#projekty">Projekty</a>
+            <a href="#github">GitHub</a>
+            <a href="#dodaj">Dodaj projekt</a>
+            <a href="#patronite">Patronite</a>
+            <a href="#kontakt">Kontakt</a>
+            <a class="button button-primary button-block" id="patronite-link-mobile" href="#" target="_blank" rel="noreferrer">
+              Wspieraj na Patronite
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section" id="start">
+          <div class="shell hero-grid">
+            <div class="hero-copy fade-up">
+              <p class="eyebrow">Strona gotowa pod GitHub Pages i promocję Twoich realizacji</p>
+              <h1>
+                GP Electronics
+                <span>portfolio projektów, które kieruje ludzi do GitHub, opisów i Patronite.</span>
+              </h1>
+              <p class="hero-text">
+                To jest lekka, nowoczesna strona do pokazywania elektroniki, embedded, automatyki i aplikacji.
+                Możesz publikować projekty, oznaczać ich status, dodawać linki do repozytoriów i budować wokół nich społeczność.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projekty">Zobacz projekty</a>
+                <a class="button button-secondary" href="#dodaj">Dodaj nowy projekt</a>
+              </div>
+
+              <div class="stats-grid" id="stats-grid">
+                <article class="stat-card">
+                  <span>Projektów</span>
+                  <strong id="projects-count">0</strong>
+                </article>
+                <article class="stat-card">
+                  <span>Kategorii</span>
+                  <strong id="categories-count">0</strong>
+                </article>
+                <article class="stat-card">
+                  <span>Publikacja</span>
+                  <strong>GitHub</strong>
+                </article>
+              </div>
+            </div>
+
+            <aside class="featured-panel fade-up-delayed">
+              <div class="featured-label">Wyróżniony projekt</div>
+              <div class="featured-card" id="featured-project"></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section shell capabilities-section">
+          <div class="capabilities-grid">
+            <article class="info-card reveal-card">
+              <p class="info-kicker">Elektronika i embedded</p>
+              <h2>Urządzenia, sterowniki i prototypy</h2>
+              <p>
+                Pokazuj projekty oparte o ESP32, STM32, BLE, wyświetlacze, sensory, interfejsy przemysłowe i własne płytki.
+              </p>
+            </article>
+            <article class="info-card reveal-card">
+              <p class="info-kicker">Aplikacje i interfejsy</p>
+              <h2>Mobile, web i narzędzia operatorskie</h2>
+              <p>
+                Każdy projekt może prowadzić do aplikacji mobilnej, dokumentacji, demo, filmu lub osobnej podstrony.
+              </p>
+            </article>
+            <article class="info-card reveal-card">
+              <p class="info-kicker">Wsparcie społeczności</p>
+              <h2>Patronite jako następny krok</h2>
+              <p>
+                Wpleć wsparcie twórcy w stronę tak, by odbiorca po obejrzeniu projektu wiedział, jak pomóc w rozwoju kolejnych realizacji.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section shell" id="projekty">
+          <div class="section-heading">
+            <p class="eyebrow">Twoje portfolio</p>
+            <h2>Projekty gotowe do filtrowania, udostępniania i dalszej rozbudowy</h2>
+            <p>
+              Sekcja jest przygotowana pod opisy realizacji, statusy prac, linki do GitHub, PDF, filmów, dokumentacji i kolejnych materiałów.
+            </p>
+          </div>
+
+          <div class="projects-toolbar">
+            <label class="search-field" for="project-search">
+              <span>Szukaj projektu</span>
+              <input id="project-search" type="search" placeholder="np. ESP32, BLE, LVGL, Flutter..." />
+            </label>
+
+            <div class="toolbar-meta">
+              <div class="filter-group" id="category-filters" aria-label="Filtry kategorii"></div>
+              <p class="results-summary" id="results-summary"></p>
+            </div>
+          </div>
+
+          <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <section class="section shell github-section" id="github">
+          <div class="section-heading">
+            <p class="eyebrow">Publikacja przez GitHub</p>
+            <h2>Prosty workflow: edytujesz treść, commitujesz, a GitHub publikuje stronę</h2>
+            <p>
+              Ta wersja jest statyczna i nadaje się do hostowania na GitHub Pages. Możesz prowadzić stronę jak repozytorium: zmiany w treści, push i gotowe.
+            </p>
+          </div>
+
+          <div class="github-layout">
+            <article class="github-callout">
+              <h3>Jak to działa w praktyce</h3>
+              <p>
+                Edytujesz plik z danymi projektów, podmieniasz linki do repozytoriów i Patronite, a potem publikujesz wszystko z poziomu GitHub.
+              </p>
+              <div class="github-steps">
+                <div>
+                  <strong>1. Treść</strong>
+                  <span>Zmieniasz `app.js` i własne linki.</span>
+                </div>
+                <div>
+                  <strong>2. Repozytorium</strong>
+                  <span>Wypychasz commit na GitHub.</span>
+                </div>
+                <div>
+                  <strong>3. Hosting</strong>
+                  <span>GitHub Pages publikuje stronę publicznie.</span>
+                </div>
+              </div>
+              <div class="hero-actions">
+                <a class="button button-secondary" id="github-repository-link" href="#" target="_blank" rel="noreferrer">Otwórz GitHub</a>
+                <a class="button button-ghost" href="#dodaj">Przejdź do edycji projektów</a>
+              </div>
+            </article>
+
+            <div class="github-cards">
+              <article class="mini-card">
+                <p class="info-kicker">Repo jako centrum</p>
+                <h3>Każdy projekt może mieć link do źródeł</h3>
+                <p>Od razu kierujesz ludzi do repozytorium, dokumentacji, BOM albo filmu z realizacji.</p>
+              </article>
+              <article class="mini-card">
+                <p class="info-kicker">Strona bez backendu</p>
+                <h3>Mniej utrzymania, szybkie wdrożenie</h3>
+                <p>Bez serwera, bez bazy, bez panelu admina na start. Treść trzymasz razem z kodem strony.</p>
+              </article>
+              <article class="mini-card">
+                <p class="info-kicker">Rozbudowa później</p>
+                <h3>Gdy będzie potrzeba, dodasz CMS albo API</h3>
+                <p>Ten układ można później przepiąć do Supabase, bazy danych lub własnego panelu edycji.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section shell add-section" id="dodaj">
+          <div class="add-layout">
+            <article class="editor-note">
+              <div class="section-heading compact">
+                <p class="eyebrow">Dodawanie projektów</p>
+                <h2>Na start możesz zarządzać treścią bez przebudowy całej strony</h2>
+                <p>
+                  Formularz poniżej dodaje projekt lokalnie w przeglądarce, żeby szybko sprawdzić układ. Żeby zmiana była publiczna dla wszystkich, wpisz projekt do `defaultProjects` w pliku `app.js` i wypchnij repozytorium na GitHub.
+                </p>
+              </div>
+
+              <div class="editor-actions">
+                <button class="button button-secondary" id="export-projects" type="button">Pobierz listę projektów JSON</button>
+                <button class="button button-ghost" id="reset-custom-projects" type="button">Usuń lokalnie dodane projekty</button>
+              </div>
+
+              <div class="editor-hint">
+                <strong>Co edytować na stałe:</strong>
+                <p>
+                  W `app.js` podmień `siteConfig` na swoje linki do GitHub, Patronite, domeny i kontaktu. Potem aktualizuj tablicę `defaultProjects`.
+                </p>
+              </div>
+            </article>
+
+            <form class="project-form" id="add-project-form">
+              <div class="field">
+                <label for="project-title">Tytuł projektu</label>
+                <input id="project-title" name="title" type="text" placeholder="np. Sterownik pieca z ESP32" required />
+              </div>
+
+              <div class="field">
+                <label for="project-category">Kategoria</label>
+                <input id="project-category" name="category" type="text" placeholder="np. Automatyka / ESP32" required />
+              </div>
+
+              <div class="field field-wide">
+                <label for="project-description">Krótki opis</label>
+                <textarea
+                  id="project-description"
+                  name="shortDescription"
+                  rows="5"
+                  placeholder="Opisz, co robi projekt i dlaczego jest ważny."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="field">
+                <label for="project-tags">Tagi po przecinku</label>
+                <input id="project-tags" name="tags" type="text" placeholder="ESP32, BLE, LVGL, Flutter" />
+              </div>
+
+              <div class="field">
+                <label for="project-status">Status</label>
+                <input id="project-status" name="status" type="text" placeholder="W trakcie" value="Nowy" />
+              </div>
+
+              <div class="field">
+                <label for="project-demo">Link do projektu lub opisu</label>
+                <input id="project-demo" name="demoUrl" type="url" placeholder="https://twoja-strona.pl/projekt" />
+              </div>
+
+              <div class="field">
+                <label for="project-repo">Link do repozytorium</label>
+                <input id="project-repo" name="repoUrl" type="url" placeholder="https://github.com/grzecho322-lgtm/projekt" />
+              </div>
+
+              <button class="button button-primary button-block" type="submit">Dodaj projekt do podglądu</button>
+              <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <section class="section patronite-section" id="patronite">
+          <div class="shell patronite-layout">
+            <div class="patronite-copy">
+              <p class="eyebrow inverted">Wsparcie twórcy</p>
+              <h2>Po obejrzeniu projektów odbiorca od razu widzi, jak wesprzeć kolejne realizacje</h2>
+              <p>
+                Strona ma naturalne miejsce na CTA do Patronite, opis progów wsparcia i komunikat, po co zbierasz środki: prototypy, testy, dokumentację i publikacje.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-light" id="patronite-link-section" href="#" target="_blank" rel="noreferrer">Przejdź do Patronite</a>
+                <a class="button button-outline-light" href="#kontakt">Skontaktuj się</a>
+              </div>
+            </div>
+
+            <div class="tiers-grid">
+              <article class="tier-card">
+                <span>Próg 1</span>
+                <h3>Wsparcie podstawowe</h3>
+                <p>Dla osób, które chcą dorzucić się do kolejnych testów, części i materiałów.</p>
+              </article>
+              <article class="tier-card">
+                <span>Próg 2</span>
+                <h3>Wsparcie premium</h3>
+                <p>Możesz zaoferować wcześniejszy dostęp do dokumentacji, PDF, zdjęć z warsztatu albo relacji z budowy.</p>
+              </article>
+              <article class="tier-card">
+                <span>Próg 3</span>
+                <h3>Partner projektu</h3>
+                <p>Dla osób lub firm, które chcą realnie wspierać rozwój urządzeń, aplikacji i publikacji.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section shell contact-section" id="kontakt">
+          <div class="contact-layout">
+            <article class="contact-card">
+              <p class="eyebrow">Kontakt i współpraca</p>
+              <h2>Przestrzeń na zapytania od klientów, partnerów i społeczności</h2>
+              <ul class="contact-list">
+                <li><strong>E-mail</strong><span id="contact-email"></span></li>
+                <li><strong>Strona / domena</strong><span id="contact-website"></span></li>
+                <li><strong>GitHub</strong><span id="contact-github"></span></li>
+              </ul>
+            </article>
+
+            <article class="contact-card roadmap-card">
+              <p class="eyebrow">Co możesz dodać później</p>
+              <h2>Ta baza jest gotowa do dalszej rozbudowy</h2>
+              <div class="roadmap-grid">
+                <span>Osobne podstrony dla projektów</span>
+                <span>Galerie zdjęć i filmów</span>
+                <span>Pliki PDF, BOM i kod źródłowy</span>
+                <span>Aktualności i blog postępów</span>
+                <span>Panel edycji lub CMS</span>
+                <span>Wersję polską i angielską</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="shell footer-inner">
+          <div>
+            <strong>GP Electronics</strong>
+            <p>Portfolio projektów, elektronika, embedded, GitHub i wsparcie Patronite.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#start">Start</a>
+            <a href="#projekty">Projekty</a>
+            <a href="#github">GitHub</a>
+            <a href="#patronite">Patronite</a>
+            <a href="#kontakt">Kontakt</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
