@@ -4,7 +4,7 @@ const siteConfig = {
   githubRepoUrl: "https://github.com/grzecho322-lgtm/GP-Electronics",
   githubEditProjectsUrl: "https://github.com/grzecho322-lgtm/GP-Electronics/edit/main/app.js",
   patroniteUrl: "#patronite",
-  email: "Uzupełnij adres e-mail",
+  email: "grzecgorzpyda@yachoo.com",
   website: "https://grzecho322-lgtm.github.io/GP-Electronics/",
 };
 
