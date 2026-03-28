@@ -967,8 +967,9 @@ img {
 }
 
 .project-card:nth-child(3) {
-  manimation-delay: 160ms;
+  animation-delay: 160ms;
 }
+
 @keyframes rise-in {
   from {
     opacity: 0;
