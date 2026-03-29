@@ -32,22 +32,46 @@ window.GP_SITE_DATA = {
       ],
       "resources": [
         {
-          "title": "Repo projektu",
-          "description": "Po publikacji możesz tu podpiąć publiczne repo z kodem PLC i toolchainem.",
-          "url": "",
+          "title": "Materiały projektu",
+          "description": "Publiczny katalog z kodem, dokumentacją i buildami PLC MVP w repo GP Electronics.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/plc-mvp",
           "kind": "repo"
         },
         {
-          "title": "Dokumentacja / PDF",
-          "description": "Dobre miejsce na architekturę, memory mapę, instrukcję uruchomienia albo opis ST-lite.",
-          "url": "",
+          "title": "README projektu",
+          "description": "Wprowadzenie do PLC MVP, struktury repo i głównych założeń projektu.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/plc-mvp/README.md",
           "kind": "docs"
+        },
+        {
+          "title": "Dokumentacja architektury",
+          "description": "Opis architektury projektu PLC, runtime i głównych modułów.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/plc-mvp/ARCHITECTURE.md",
+          "kind": "docs"
+        },
+        {
+          "title": "Targety firmware",
+          "description": "Notatki o wariantach firmware i wspieranych targetach sprzętowych.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/plc-mvp/FIRMWARE_TARGETS.md",
+          "kind": "docs"
+        },
+        {
+          "title": "Przykład programu ST-lite",
+          "description": "Przykładowy plik `blink.st` do testów logiki sterownika.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/plc-mvp/blink.st",
+          "kind": "code"
+        },
+        {
+          "title": "Firmware Arduino Uno (.hex)",
+          "description": "Gotowy build firmware PLC dla wariantu Arduino Uno.",
+          "url": "https://grzecho322-lgtm.github.io/GP-Electronics/assets/projects/plc-mvp/plc_firmware_arduino_uno.hex",
+          "kind": "download"
         }
       ],
       "status": "Aktywnie rozwijany",
       "featured": true,
       "demoUrl": "",
-      "repoUrl": "",
+      "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/plc-mvp",
       "coverA": "#1d4ed8",
       "coverB": "#0f766e"
     },
@@ -74,22 +98,28 @@ window.GP_SITE_DATA = {
       ],
       "resources": [
         {
-          "title": "APK do pobrania",
-          "description": "Podstaw tutaj gotowy link do release APK, gdy będziesz chciał udostępnić wersję testową.",
-          "url": "",
-          "kind": "download"
+          "title": "Opis projektu",
+          "description": "Główny opis monorepo aplikacji serwisowej dla ciężarówek.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/truck-service-niezbednik/README.md",
+          "kind": "docs"
         },
         {
-          "title": "Repo projektu",
-          "description": "Możesz podpiąć repo monorepo z aplikacją, pakietami i CI.",
-          "url": "",
+          "title": "README aplikacji Flutter",
+          "description": "Szczegóły modułu `truck_app` i uruchamiania aplikacji.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/truck-service-niezbednik/truck_app_README.md",
+          "kind": "docs"
+        },
+        {
+          "title": "Materiały projektu",
+          "description": "Publiczny katalog z materiałami projektu Truck Service Niezbędnik.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/truck-service-niezbednik",
           "kind": "repo"
         }
       ],
       "status": "Rozwijany",
       "featured": false,
       "demoUrl": "",
-      "repoUrl": "",
+      "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/truck-service-niezbednik",
       "coverA": "#9a3412",
       "coverB": "#d97706"
     },
@@ -116,22 +146,28 @@ window.GP_SITE_DATA = {
       ],
       "resources": [
         {
-          "title": "APK do pobrania",
-          "description": "Możesz tu dodać bezpośredni plik APK albo link do paczki release.",
-          "url": "",
-          "kind": "download"
+          "title": "Materiały projektu",
+          "description": "Publiczny katalog z opisem i materiałami Moto Service App.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/moto-service-app",
+          "kind": "repo"
         },
         {
-          "title": "Opis funkcji / PDF",
-          "description": "Dobre miejsce na specyfikację modułów, screeny albo instrukcję dla użytkownika.",
-          "url": "",
+          "title": "Opis funkcji aplikacji",
+          "description": "README projektu z opisem modułów, backupu, PDF i workflow serwisowego.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/moto-service-app/README.md",
+          "kind": "docs"
+        },
+        {
+          "title": "Instrukcja widgetów iOS",
+          "description": "Dodatkowe notatki konfiguracyjne dla wersji iOS.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/moto-service-app/widget_setup_ios.md",
           "kind": "docs"
         }
       ],
       "status": "Rozwijany",
       "featured": false,
       "demoUrl": "",
-      "repoUrl": "",
+      "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/moto-service-app",
       "coverA": "#9a3412",
       "coverB": "#0f766e"
     },
@@ -158,22 +194,22 @@ window.GP_SITE_DATA = {
       ],
       "resources": [
         {
-          "title": "APK do pobrania",
-          "description": "Podstaw tutaj gotowy link do wersji release aplikacji Android.",
-          "url": "",
-          "kind": "download"
+          "title": "Materiały projektu",
+          "description": "Publiczny katalog z opisem aplikacji RGB BLE Controller.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/rgb-ble-controller-app",
+          "kind": "repo"
         },
         {
-          "title": "Opis protokołu BLE",
-          "description": "Możesz dodać tu dokumentację UUID, komend i formatu danych.",
-          "url": "",
+          "title": "Opis aplikacji i BLE",
+          "description": "README projektu z opisem aplikacji oraz powiązania z firmware BLE.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/rgb-ble-controller-app/README.md",
           "kind": "docs"
         }
       ],
       "status": "Działające MVP",
       "featured": false,
       "demoUrl": "",
-      "repoUrl": "",
+      "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/rgb-ble-controller-app",
       "coverA": "#1d4ed8",
       "coverB": "#0f766e"
     },
@@ -200,22 +236,28 @@ window.GP_SITE_DATA = {
       ],
       "resources": [
         {
-          "title": "Instalator / build desktop",
-          "description": "Tutaj możesz dodać paczkę macOS, Windows albo link do instalatora.",
-          "url": "",
-          "kind": "download"
+          "title": "Materiały projektu",
+          "description": "Publiczny katalog z dokumentacją i materiałami GP Electronics IDE.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/gp-electronics-ide",
+          "kind": "repo"
         },
         {
-          "title": "Repo projektu",
-          "description": "Miejsce na kod IDE, launchery i workflow buildów release.",
-          "url": "",
-          "kind": "repo"
+          "title": "Dokumentacja IDE",
+          "description": "README z opisem funkcji, presetów płytek i procesu release.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/gp-electronics-ide/README.md",
+          "kind": "docs"
+        },
+        {
+          "title": "Instrukcja launcherów",
+          "description": "README launcherów i workflow buildów release dla IDE.",
+          "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/gp-electronics-ide/launcher_README.md",
+          "kind": "docs"
         }
       ],
       "status": "Aktywnie rozwijany",
       "featured": false,
       "demoUrl": "",
-      "repoUrl": "",
+      "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/gp-electronics-ide",
       "coverA": "#0f766e",
       "coverB": "#1d4ed8"
     }

@@ -24,21 +24,21 @@ window.GP_SITE_DATA.projects = window.GP_SITE_DATA.projects.concat([
     "resources": [
       {
         "title": "Kod firmware (.ino)",
-        "description": "Podstaw tutaj bezpo≈õredni link do szkicu `.ino` albo do repo z firmware.",
-        "url": "",
+        "description": "Publiczny szkic `.ino` firmware dla ESP32-C3 RGB BLE Controller.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/esp32-c3-rgb-ble-controller/esp32_c3_rgb_ble_controller.ino",
         "kind": "code"
       },
       {
         "title": "Schemat / opis BLE",
-        "description": "Miejsce na UUID, pinout, schemat pod≈ÇƒÖczenia i instrukcjƒô wgrywania.",
-        "url": "",
+        "description": "README z UUID, pinoutem i instrukcjƒÖ wgrywania firmware.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/esp32-c3-rgb-ble-controller/README.md",
         "kind": "docs"
       }
     ],
     "status": "Gotowy do test√≥w",
     "featured": false,
     "demoUrl": "",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/esp32-c3-rgb-ble-controller",
     "coverA": "#0f766e",
     "coverB": "#1d4ed8"
   },
@@ -66,21 +66,21 @@ window.GP_SITE_DATA.projects = window.GP_SITE_DATA.projects.concat([
     "resources": [
       {
         "title": "Kod sterownika (.ino)",
-        "description": "Tutaj mo≈ºesz dodaƒá bezpo≈õredni link do pliku lub repo z firmware.",
-        "url": "",
+        "description": "Publiczny szkic `.ino` sterownika WS2805 dla ESP32 Super Mini.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/ws2805-driver-esp32-supermini/arduino_ws2805_esp32_supermini.ino",
         "kind": "code"
       },
       {
         "title": "Notatki techniczne",
-        "description": "Miejsce na timing, pinout, schemat i instrukcjƒô uruchomienia.",
-        "url": "",
+        "description": "README z opisem timingu, poziom√≥w logicznych i uruchomienia.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/ws2805-driver-esp32-supermini/README.md",
         "kind": "docs"
       }
     ],
     "status": "Gotowy szkic",
     "featured": false,
     "demoUrl": "",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/ws2805-driver-esp32-supermini",
     "coverA": "#d97706",
     "coverB": "#0f766e"
   },
@@ -107,22 +107,52 @@ window.GP_SITE_DATA.projects = window.GP_SITE_DATA.projects.concat([
     ],
     "resources": [
       {
-        "title": "Repo DSP / firmware",
-        "description": "Pod≈ÇƒÖcz tu kod efekt√≥w, presety i konfiguracjƒô projektu.",
-        "url": "",
-        "kind": "repo"
+        "title": "Kod firmware DSP",
+        "description": "G≈Ç√≥wny plik `main.cpp` dla firmware efektu gitarowego na Daisy Seed.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/guitar-multieffect-daisy/main.cpp",
+        "kind": "code"
       },
       {
-        "title": "Schemat i notatki hardware",
-        "description": "Mo≈ºesz dodaƒá PDF z blokowym opisem urzƒÖdzenia i sekcjƒÖ audio.",
-        "url": "",
+        "title": "README projektu",
+        "description": "G≈Ç√≥wne wprowadzenie do projektu multi-efektu gitarowego.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/guitar-multieffect-daisy/README.md",
         "kind": "docs"
+      },
+      {
+        "title": "Dokumentacja architektury",
+        "description": "Opis architektury, toru audio i etap√≥w budowy projektu.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/guitar-multieffect-daisy/01_architektura.md",
+        "kind": "docs"
+      },
+      {
+        "title": "BOM projektu",
+        "description": "Lista komponent√≥w i za≈Ço≈ºe≈Ñ sprzƒôtowych do budowy prototypu.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/guitar-multieffect-daisy/02_bom.md",
+        "kind": "docs"
+      },
+      {
+        "title": "Okablowanie",
+        "description": "Notatki o po≈ÇƒÖczeniach i okablowaniu urzƒÖdzenia.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/guitar-multieffect-daisy/03_okablowanie.md",
+        "kind": "docs"
+      },
+      {
+        "title": "Instrukcja uruchomienia",
+        "description": "Kroki startowe do odpalenia prototypu i pierwszych test√≥w.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/guitar-multieffect-daisy/04_uruchomienie.md",
+        "kind": "docs"
+      },
+      {
+        "title": "Materia≈Çy projektu",
+        "description": "Publiczny katalog z README, BOM, okablowaniem i kodem firmware.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/guitar-multieffect-daisy",
+        "kind": "repo"
       }
     ],
     "status": "Starter projektu",
     "featured": false,
     "demoUrl": "",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/guitar-multieffect-daisy",
     "coverA": "#1d4ed8",
     "coverB": "#9a3412"
   },
@@ -150,21 +180,21 @@ window.GP_SITE_DATA.projects = window.GP_SITE_DATA.projects.concat([
     "resources": [
       {
         "title": "Kod Arduino (.ino)",
-        "description": "To miejsce na bezpo≈õredni link do szkicu, kt√≥ry u≈ºytkownik mo≈ºe otworzyƒá lub pobraƒá.",
-        "url": "",
+        "description": "Publiczny szkic Arduino do podglƒÖdu i pobrania.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/arduino-rgb-led-controller/arduino_rgb_led_controller.ino",
         "kind": "code"
       },
       {
         "title": "Instrukcja pod≈ÇƒÖczenia",
-        "description": "Dodaj tutaj prosty PDF albo obrazek z po≈ÇƒÖczeniami i opisem pin√≥w.",
-        "url": "",
+        "description": "README z opisem pin√≥w, komend i sposobu pod≈ÇƒÖczenia RGB LED.",
+        "url": "https://github.com/grzecho322-lgtm/GP-Electronics/blob/main/assets/projects/arduino-rgb-led-controller/README.md",
         "kind": "docs"
       }
     ],
     "status": "Gotowy szkic",
     "featured": false,
     "demoUrl": "",
-    "repoUrl": "",
+    "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics/tree/main/assets/projects/arduino-rgb-led-controller",
     "coverA": "#475569",
     "coverB": "#0f766e"
   },
@@ -175,7 +205,7 @@ window.GP_SITE_DATA.projects = window.GP_SITE_DATA.projects.concat([
     "shortDescription": "Statyczna strona portfolio GP Electronics do publikacji projekt√≥w, filtrowania realizacji i kierowania odbiorc√≥w do GitHub oraz Patronite, hostowana na GitHub Pages.",
     "fullDescription": [
       "To obecna strona portfolio GP Electronics. Jest hostowana na GitHub Pages i dzia≈Ça jako lekka, statyczna wizyt√≥wka projekt√≥w embedded, aplikacji oraz narzƒôdzi desktopowych.",
-      "W tej wersji ma filtrowanie projekt√≥w, owner-only aktualizacjƒô tre≈õci przez GitHub oraz osobne podstrony z pe≈Çny opisem projektu, kodem, plikami do pobrania i materia≈Çami dodatkowymi."
+      "W tej wersji ma filtrowanie projekt√≥w, owner-only aktualizacjƒô tre≈õci przez GitHub oraz osobne podstrony z pe≈Çnym opisem projektu, kodem, plikami do pobrania i materia≈Çami dodatkowymi."
     ],
     "tags": [
       "HTML",
@@ -205,4 +235,9 @@ window.GP_SITE_DATA.projects = window.GP_SITE_DATA.projects.concat([
     ],
     "status": "Opublikowany",
     "featured": false,
-    "demoU\õéàöŒãÀŸ‹ûôX⁄ÃÃåã[›Kô⁄]Xãö[À—‘Q[X›õ€öX‹À»ãàúô\’\õéàöŒãÀŸ⁄]Xãò€€KŸ‹ûôX⁄ÃÃåã[›K—‘Q[X›õ€öX‹»ãàò€›ô\êHéààÃYYãàò€›ô\êàéààŒXLÕLàÇàBóJN¬
+    "demoUrl": "https://grzecho322-lgtm.github.io/GP-Electronics/",
+    "repoUrl": "https://github.com/grzecho322-lgtm/GP-Electronics",
+    "coverA": "#1d4ed8",
+    "coverB": "#9a3412"
+  }
+]);
