@@ -1,0 +1,36 @@
+{
+  "repository": "grzecho322-lgtm/GP-Electronics",
+  "release_tag": "downloads-2026-03-29",
+  "release_name": "GP Electronics Downloads 2026-03-29",
+  "release_body": "Central release with APK and macOS ZIP packages for GP Electronics projects.",
+  "assets": [
+    {
+      "projectId": "rgb-ble-controller-app",
+      "label": "RGB BLE Controller APK",
+      "localPath": "assets/projects/rgb-ble-controller-app/RGB-BLE-Controller-release.apk",
+      "uploadName": "RGB-BLE-Controller-release.apk",
+      "contentType": "application/vnd.android.package-archive"
+    },
+    {
+      "projectId": "rgb-ble-controller-app",
+      "label": "RGB BLE Controller macOS ZIP",
+      "localPath": "assets/projects/rgb-ble-controller-app/RGB-BLE-macOS-package.zip",
+      "uploadName": "RGB-BLE-macOS-package.zip",
+      "contentType": "application/zip"
+    },
+    {
+      "projectId": "moto-service-app",
+      "label": "Moto Service App macOS ZIP",
+      "localPath": "assets/projects/moto-service-app/moto_service_owner_edition-macos.zip",
+      "uploadName": "Moto-Service-App-macOS.zip",
+      "contentType": "application/zip"
+    },
+    {
+      "projectId": "gp-electronics-ide",
+      "label": "GP Electronics IDE macOS ZIP",
+      "localPath": "assets/projects/gp-electronics-ide/gp_electronics_ide_macos_20260325_202008.zip",
+      "uploadName": "GP-Electronics-IDE-macOS.zip",
+      "contentType": "application/zip"
+    }
+  ]
+}

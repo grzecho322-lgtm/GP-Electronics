@@ -60,6 +60,38 @@ Potem otwórz `http://localhost:8000`.
 4. Wybierz publikację z gałęzi `main` i katalogu root.
 5. Po chwili GitHub opublikuje stronę pod adresem `https://grzecho322-lgtm.github.io/GP-Electronics/`.
 
+## Publikacja binarek przez GitHub Release
+
+Do projektu jest już przygotowany manifest i skrypt do wrzucania APK oraz paczek ZIP:
+
+- `release-assets-manifest.json`
+- `scripts/publish_release_assets.sh`
+
+Domyślnie manifest obejmuje:
+
+- `RGB-BLE-Controller-release.apk`
+- `RGB-BLE-macOS-package.zip`
+- `Moto-Service-App-macOS.zip`
+- `GP-Electronics-IDE-macOS.zip`
+
+Wymagany jest token GitHub z prawem zapisu do repo, dostępny jako `GITHUB_TOKEN` albo `GH_TOKEN`.
+
+Przykład:
+
+```bash
+chmod +x scripts/publish_release_assets.sh
+GITHUB_TOKEN=twoj_token ./scripts/publish_release_assets.sh
+```
+
+Jeśli chcesz zmienić nazwę releasu albo tag, edytuj `release-assets-manifest.json` albo ustaw zmienne:
+
+```bash
+RELEASE_TAG=downloads-2026-04-01 \
+RELEASE_NAME="GP Electronics Downloads 2026-04-01" \
+GITHUB_TOKEN=twoj_token \
+./scripts/publish_release_assets.sh
+```
+
 ## Ważna uwaga
 
 Jeśli w przyszłości będziesz chciał mieć prawdziwy panel „dodaj projekt” dostępny tylko dla Ciebie z poziomu przeglądarki, wtedy trzeba będzie dołożyć autoryzację i backend lub CMS oparty o GitHub API. Obecna wersja jest bezpieczna, bo publiczna strona nie pozwala nikomu dodawać treści.
